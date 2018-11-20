@@ -50,8 +50,8 @@ body {
       width: 80%; }
       body .inhoud #tekst #paragraphs {
         text-align: justify;
-        font-style: italic;
-        font-size: 10pt;
+        font-style: verdana;
+        font-size: 1.1em;
         text-indent: 30px; }
       body .inhoud #tekst p::first-letter {
         font-size: 24pt;
@@ -68,6 +68,8 @@ body {
       body .inhoud #tekst .imghack {
         width: 80%;
         border: solid black 1px; }
+    body .inhoud h1 {
+      margin-left: 25%; }
   body .flex-container {
     margin-top: 10%;
     position: fixed;

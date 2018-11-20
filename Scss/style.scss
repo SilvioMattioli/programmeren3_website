@@ -78,8 +78,8 @@ body {
 
             #paragraphs {
                 text-align: justify;
-                font-style: italic;
-                font-size: 10pt;
+                font-style: verdana;
+                font-size: 1.1em;
                 text-indent: 30px;
             }
 
@@ -105,6 +105,9 @@ body {
                 width: 80%;
                 border: solid black 1px;
             }
+        }
+        h1{
+            margin-left: 25%;
         }
 
     }
