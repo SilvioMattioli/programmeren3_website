@@ -1,0 +1,160 @@
+@import '_colors';
+@import'widths';
+/*@import '_imgs';*/
+
+$border-widths-h2:0px 0px 2px 2px;
+$font-family: 'Rouge Script',
+cursive,
+"Times New Roman",
+Georgia,
+serif;
+
+@mixin border($width, $style) {
+    border: $width $style $article-border-color-grey;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+    background: url(../images/4177707-silly-wallpapers.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .navbar {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        height: 2em;
+        background-color: rgba(0, 0, 88, 0.5);
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    li {
+        float: left;
+        border-right: 1px solid $tekst-color-is-white;
+        width: 33%;
+    }
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        width: 8em;
+        height: 0.5em;
+        bottom: auto;
+        color: $tekst-color-is-white;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .inhoud {
+        @include border(4px, solid);
+        background-color: $background-color-transparent;
+        width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        margin-bottom: 0px;
+        text-align: left;
+
+        #tekst {
+            margin-left: 10%;
+            width: 80%;
+
+            #paragraphs {
+                text-align: justify;
+                font-style: italic;
+                font-size: 10pt;
+                text-indent: 30px;
+            }
+
+            p::first-letter {
+                font-size: 24pt;
+                color: $h2-color-blue;
+            }
+
+            h2 {
+                color: $h2-color-blue;
+                text-align: center;
+                @include border(0px, solid);
+                border-color: $h2-border-color-black;
+                border-width: $border-widths-h2;
+            }
+
+            h3 {
+                text-decoration: underline;
+                font-style: normal;
+            }
+
+            .imghack {
+                width: 80%;
+                border: solid black 1px;
+            }
+        }
+
+    }
+
+
+    .flex-container {
+        margin-top: 10%;
+        position: fixed;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: 50%;
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .flex-container > button {
+        background-color: #f1f1f1;
+        width: 33%;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+
+
+    }
+
+
+    .flex-container > button:hover {
+        animation-name: example2;
+        animation-duration: 10s;
+    }
+
+    /* Standard syntax */
+    @keyframes example2 {
+        0% {
+            color: green;
+        }
+
+        25% {
+            color: blue;
+        }
+
+        50% {
+            color: purple;
+        }
+
+        100% {
+            color: red;
+        }
+    }
+
+}

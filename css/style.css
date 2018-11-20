@@ -1,0 +1,52 @@
+/*@import '_imgs';*/
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../images/4177707-silly-wallpapers.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body .inhoud {
+    border: 4px solid grey;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+body .inhoud #tekst {
+    margin-left: 10%;
+    width: 80%;
+}
+
+body .inhoud #tekst #paragraphs {
+    text-align: justify;
+    font-style: italic;
+    font-size: 10pt;
+    text-indent: 30px;
+}
+
+body .inhoud #tekst h2 {
+    color: #6666ff;
+    text-align: center;
+    border: 0px solid grey;
+    border-color: black;
+    border-width: 0px 0px 2px 2px;
+}
+
+body .inhoud #tekst h3 {
+    text-decoration: underline;
+    font-style: normal;
+}
+
+body .inhoud #tekst .imghack {
+    width: 80%;
+    border: solid black 1px;
+}
